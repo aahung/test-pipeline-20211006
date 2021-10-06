@@ -2,5 +2,5 @@ version = 0.1
 [default.deploy.parameters]
 stack_name = "test-pipeline-20211006"
 s3_prefix = "test-pipeline-20211006"
-region = "us-east-1"
+region = "us-west-2"
 capabilities = "CAPABILITY_IAM"

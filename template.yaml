@@ -24,6 +24,23 @@ Resources:
             Path: /hello
             Method: get
 
+  HelloWorldFunction2:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      Architectures:
+        - x86_64
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+    Metadata:
+      DockerTag: nodejs14.x-v1
+      DockerContext: ./hello-world2
+      Dockerfile: Dockerfile
+
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
   # Find out more about other implicit resources you can reference within SAM

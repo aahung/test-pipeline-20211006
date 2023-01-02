@@ -1,5 +1,7 @@
 # test-pipeline-20211006
 
+(trigger pipeline 20230102)
+
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
 - hello-world - Code for the application's Lambda function.
